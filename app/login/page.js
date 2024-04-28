@@ -2,15 +2,22 @@
 
 import { Button } from "@/components/ui/button"
 import { useSession, signIn, signOut } from "next-auth/react"
+import { useRouter } from "next/navigation"
 
 export default function page() {
     const { data: session } = useSession()
 
-    if (session) {
+    // session usage
+    /* if (session) {
         return <>
             Signed in as {session.user.email} <br />
             <button onClick={() => signOut()}>Sign out</button>
         </>
+    } */
+
+    if (session) {
+        const router = useRouter();
+        router.push("/dashboard");
     }
 
     return (

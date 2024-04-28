@@ -23,7 +23,6 @@ export default function Hero() {
           <div className="space-x-4 sm:hidden inline-block">
             <Link asChild href="#">
             <Button
-                className="text-sm bg-[#9c5239] hover:bg-[#9c5239]/90 focus-visible:ring-[#9c5239] dark:bg-[#9c5239] dark:hover:bg-[#9c5239]/90 dark:focus-visible:ring-[#9c5239]"
                 variant="primary"
               >
                 Buy Me a Coffee
