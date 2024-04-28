@@ -1,8 +1,4 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/lJwnQlHSEBA
- * Documentation: https://v0.dev/docsintegrating-generated-code-into-your-nextjs-app
-*/
+"use client"
 
 import { Button } from "@/components/ui/button"
 import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet"
@@ -32,7 +28,7 @@ export default function Navbar() {
                     <MountainIcon className="h-6 w-6 mt-2" />
                 </div>
                 <SheetContent side="left">
-                    <Link className="mr-6 hidden lg:flex" href="">
+                    <Link className="mr-6 hidden lg:flex" href="/">
                         <MountainIcon className="h-6 w-6" />
                         <span className="sr-only">Acme Inc</span>
                     </Link>
@@ -45,7 +41,7 @@ export default function Navbar() {
                     </div>
                 </SheetContent>
             </Sheet>
-            <Link className="mr-6 hidden lg:flex" href="">
+            <Link className="mr-6 hidden lg:flex" href="/">
                 <MountainIcon className="h-6 w-6" />
                 <span className="sr-only">Acme Inc</span>
             </Link>
@@ -63,7 +59,9 @@ export default function Navbar() {
                 </div>
 
                 <div>
-                    <Button size="lg" className="text-base bg-[#9c5239] hover:bg-[#9c5239]/90 focus-visible:ring-[#9c5239] dark:bg-[#9c5239] dark:hover:bg-[#9c5239]/90 dark:focus-visible:ring-[#9c5239]">Login</Button>
+                    <Link href="/login">
+                        <Button size="lg" className="text-base bg-[#9c5239] hover:bg-[#9c5239]/90 focus-visible:ring-[#9c5239] dark:bg-[#9c5239] dark:hover:bg-[#9c5239]/90 dark:focus-visible:ring-[#9c5239]">Login</Button>
+                    </Link>
                 </div>
             </nav>
         </header>
